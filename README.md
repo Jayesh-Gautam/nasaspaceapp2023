@@ -3,7 +3,7 @@ We have developed a website that serves as a comprehensive platform for providin
 
 Key features of the website include:
 
-1. Water Quality Data:Users can access real-time information on water quality parameters such as pH levels, turbidity, and pollutant concentrations. This data helps people gauge the health of the river and its suitability for various activities.
+1. **Water Quality Data**:Users can access real-time information on water quality parameters such as pH levels, turbidity, and pollutant concentrations. This data helps people gauge the health of the river and its suitability for various activities.
 
 2. **Weather Information:** The website provides up-to-date weather forecasts and conditions for the region around the river. This data is vital for planning outdoor activities and understanding how weather might impact the river environment.
 
