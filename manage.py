@@ -4,7 +4,7 @@
 import os
 import sys
 
-
+#comment
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'nasa.settings')
