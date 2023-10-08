@@ -1,0 +1,113 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 100vh;
+    margin: 1px;
+    padding:1px;
+}
+ul{
+list-style-type:none
+}
+.hover-button1 {
+    padding: 30px 200px;
+    background-color: #04364ab7;
+    color: #fff;
+    border: none;
+    font-size: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hover-button1:hover {
+    transform: scale(1.1);
+}
+
+.hover-button2 {
+    padding: 87px 200px;
+    background-color: #64ccc5;
+    color: #fff;
+    border: none;
+    font-size: 70px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hover-button2:hover {
+    transform: scale(1.1);
+}
+.hover-button3 {
+    padding: 122px 250px;
+    background-color: #64ccc5;
+    color: #fff;
+    font-size: 50px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hover-button3:hover {
+    transform: scale(1.1);
+}
+.hover-button4 {
+    padding: 25px 50px;
+    background-color: #176b87ae;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hover-button4:hover {
+    transform: scale(1.1);
+}
+.hover-button5 {
+    padding: 25px 50px;
+    background-color: #176b87ae;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hover-button5:hover {
+    transform: scale(1.1);
+}
+.hover-button6 {
+    padding: 25px 50px;
+    background-color: #176b87ae;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hover-button6:hover {
+    transform: scale(1.1);
+}
+.hover-button7 {
+    padding: 25px 50px;
+    background-color: #176b87ae;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hover-button7:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static "styles.css" %}">
+    <title>Button Hover Animation</title>
+</head>
+<style>
+   #clock {
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            color: #04364ab7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    /* Apply styles to the element you want to position at the top-right corner */
+    .top-right-element {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        padding: 10px;
+
+
+    }
+    .top-right-element2 {
+        position: absolute;
+        top: 200px;
+        left: 30px;
+        padding: 10px;
+
+    }
+    .top-right-element3 {
+        position: absolute;
+        top: 200px;
+        left: 800px;
+        padding: 10px;
+
+    }
+    .top-right-element4 {
+        position: absolute;
+        top: 650px;
+        left: 30px;
+        padding: 10px;
+
+    }
+    .top-right-element5 {
+        position: absolute;
+        top: 650px;
+        left: 180px;
+        padding: 10px;
+
+    }
+    .top-right-element6 {
+        position: absolute;
+        top: 650px;
+        left: 330px;
+        padding: 10px;
+
+    }
+    .top-right-element7 {
+        position: absolute;
+        top: 650px;
+        left: 480px;
+        padding: 10px;
+
+    }
+</style>
+<body style="background-color: #DAFFFB;">
+    <div class="top-right-element">
+        <button class="hover-button1">{{name}}</button>
+    </div>
+    <div class="top-right-element2">
+        <button class="hover-button2">Water Body <br> BOD = 100 <br> High xyz</button>
+    </div>
+    <div class="top-right-element3">
+        <button class="hover-button3">Weather aqi= {{aqi}} <br> {{condition}} <br> temp = {{temp}}</button>
+    </div>
+    {% for n,i in species %}
+    <div class="top-right-element{{n|add:"4"}}">
+        <button class="hover-button4">{{i.name}}</button>
+    </div>
+    {% endfor %}
+<!--    <div class="top-right-element5">-->
+<!--        <button class="hover-button5">Button 5</button>-->
+<!--    </div>-->
+<!--    <div class="top-right-element6">-->
+<!--        <button class="hover-button6">Button 6</button>-->
+<!--    </div>-->
+<!--    <div class="top-right-element7">-->
+<!--        <button class="hover-button7">Button 7</button>-->
+<!--    </div>-->
+    <script src="script.js"></script>
+    <div id="clock"></div>
+
+    <script>
+         function updateClock() {
+            const now = new Date();
+
+            // Extract day, month, and year
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+            const year = now.getFullYear();
+
+            // Get the day of the week
+            const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            const dayOfWeek = daysOfWeek[now.getDay()];
+
+            const formattedDate = `${day}/${month}/${year}`;
+            const time = now.toLocaleTimeString('en-US');
+            const clockElement = document.getElementById('clock');
+
+            clockElement.innerHTML = `${dayOfWeek}, ${formattedDate}<br>${time}`;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initial update
+        updateClock();
+    </script>
+</body>
+</html>
